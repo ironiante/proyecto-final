@@ -6,7 +6,8 @@ import com.samrtpos.smartpos.service.ProductoService
 
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
-
+import org.springframework.web.bind.annotation.CrossOrigin
+@CrossOrigin(origins = ["*"])
 @RestController
 @RequestMapping("/productos")
 class ProductoController(private val productoService: ProductoService) {
